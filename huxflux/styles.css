@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.ball {
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    line-height: 39px;
+    font-size: 24px;
+    color: #008C23;
+    background-color: white;
+    text-align: center;
+    border: 1px solid white;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.container {
+    height: 100vh;
+    background-color: #008C23;
+}
+
+.wrapper {
+    width: 400px;
+}
+
+.ball-row {
+    overflow: hidden;
+    padding: 8px;
+    min-height: 57px;
+    border: 2px solid white;
+    margin-bottom: 12px;
+    border-radius: 25px;
+}
+.flex-center.ball-row {
+    justify-content: space-between;
+}
+
+.error-span {
+    color: #8c0900;
+}
+
+#huxflux-button {
+    margin-right: 12px;
+}
+
+button {
+    padding: 12px;
+    border: 2px solid white;
+    border-radius: 12px;
+    color: white;
+    font-size: 15px;
+    background-color: transparent;
+    min-width: 140px;
+    user-select: none;
+    outline:none;
+}
+
+/* Utility */
+.flex-row {
+    flex-basis: 100%;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
