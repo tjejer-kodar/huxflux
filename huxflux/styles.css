@@ -3,12 +3,38 @@
 html,
 body {
     font-family: 'Roboto', sans-serif;
-    color: #beb7a5;
+    color: #B8926A;
 }
 
 body {
     margin: 0;
     padding: 0;
+}
+
+#nav-bar {
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 40px 0;
+}
+
+#nav-bar > a {
+    text-decoration: none;
+    color: #D4C8BE;
+    margin: 0px 40px;
+}
+
+#nav-bar > a:hover {
+    text-decoration: none;
+    color: #B8926A;
+    transition: 0.5s;
+}
+
+.direction {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
 
 .ball {
@@ -17,21 +43,34 @@ body {
     height: 39px;
     line-height: 39px;
     font-size: 24px;
-    color: #ece7db;
-    background-color: #e7a9a9;
+    color: #2b2b2d;
+    background-color: #B0B0B0;
     text-align: center;
-    border: 1px solid #e7a9a9;
+    border: 1px solid #B0B0B0;
     padding: 3px;
     border-radius: 50%;
 }
 
 .container {
     height: 100vh;
-    background-color: #ece7db;
+    background-color: #2b2b2d;
+}
+
+.content {
+    width: 400px;
+    flex-grow: 2;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .wrapper {
-    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-grow: 1;
 }
 
 .ball-row {
@@ -56,9 +95,9 @@ body {
 
 button {
     padding: 12px;
-    border: 2px solid #beb7a5;
+    border: 2px solid #B0B0B0;
     border-radius: 12px;
-    color: #beb7a5;
+    color: #B0B0B0;
     font-size: 15px;
     background-color: transparent;
     min-width: 140px;
@@ -67,13 +106,41 @@ button {
 }
 
 button:hover {
-    background-color: #beb7a5;
-    color: #ece7db;
+    background-color: #B0B0B0;
+    color: #2b2b2d;
+    transition: 0.5s;
+}
+
+#footer {
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex;
+}
+
+#footer > a {
+    width: 50%;
+    display: flex;
+    margin: 0 auto;
+    display: inline-block;
+    text-decoration: none;
+    justify-content: space-around;
+}
+
+#footer div {
+    padding-top: 20px;
+    border: transparent;
+}
+
+#footer .ball {
+    color: #2b2b2d;
+    background-color: #B8926A;
+    text-align: center;
+    border: 1px solid #B8926A;
 }
 
 /* Utility */
 .flex-row {
-    flex-basis: 100%;
+    /* flex-basis: 100%; */
 }
 
 .flex-center {
@@ -82,3 +149,4 @@ button:hover {
     align-items: center;
     text-align: center;
 }
+

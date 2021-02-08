@@ -19,6 +19,12 @@ function huxflux() {
     return Number;
 }
 
+function huxfluxFooter() {
+    let Name = ['E', 'V', 'E', 'L', 'I', 'N', 'N'];
+    return Name;
+}
+
 export {
-    huxflux
+    huxflux,
+    huxfluxFooter
 };

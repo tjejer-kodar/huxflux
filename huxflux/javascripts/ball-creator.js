@@ -1,5 +1,5 @@
 import { gsap, Bounce, Power0, Elastic } from "../node_modules/gsap/all.js";
-import { huxflux } from '../huxflux.js';
+import { huxflux, huxfluxFooter } from '../huxflux.js';
 let called = 0;
 /**
  * @param Number number the number contained in the ball
@@ -13,9 +13,9 @@ function createBall(number) {
 /**
  * @param Number[] balls an array of numbers
  */
-function appendBalls(balls) {
+function appendBalls(balls, selector) {
     called++;
-    const ballRow = document.querySelector('.ball-row');
+    const ballRow = document.querySelector(selector);
     ballRow.innerHTML = '';
     if (balls && balls.length) {
         for (let i = 0; i < balls.length; i++) {
@@ -33,7 +33,8 @@ function appendBalls(balls) {
 
 
 document.querySelector('#huxflux-button').addEventListener('click', function() {
-    appendBalls(huxflux());
+    appendBalls(huxflux(), '.content .ball-row');
+    appendBalls(huxfluxFooter(),'#footer .ball-row');
 });
 
 //Just for style
