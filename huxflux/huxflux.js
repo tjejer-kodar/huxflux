@@ -1,10 +1,30 @@
 /**
- * @returns {Number[]} Lista med sju nummer
+ * @returns {Number[]}
  */
 function huxflux() {
-    return; // Returnera din lista med nummer här
+    let Number = [];
+
+    let recursion = () => {
+        let newNum = Math.floor(Math.random() * 36);
+        if (Number.indexOf(newNum) == -1 && newNum !== 0) {
+            return newNum;
+        } else {
+            return recursion();
+        }
+    }
+
+    for (let i = 0; i < 7; i++) {
+            Number.push(recursion());
+    }
+    return Number;
+}
+
+function huxfluxFooter() {
+    let Name = ['E', 'V', 'E', 'L', 'I', 'N', 'N'];
+    return Name;
 }
 
 export {
-    huxflux
+    huxflux,
+    huxfluxFooter
 };
