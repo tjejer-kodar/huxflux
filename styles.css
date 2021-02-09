@@ -5,6 +5,7 @@ html,
 body {
   font-family: "Roboto", sans-serif;
   color: white;
+  background: linear-gradient(to right, rgb(46, 107, 46), rgb(205, 228, 214));
 }
 
 body {
@@ -35,11 +36,10 @@ body {
 
 .container {
   height: 100vh;
-  background: linear-gradient(to right, rgb(46, 107, 46), rgb(205, 228, 214));
 }
 
 .wrapper {
-  width: 400px;
+  width: 450px;
 }
 
 .ball-row {
@@ -60,7 +60,11 @@ body {
 }
 
 #huxflux-button {
-  margin-right: 12px;
+  margin-right: 10px;
+}
+
+#order-button {
+  margin-right: 10px;
 }
 
 button {

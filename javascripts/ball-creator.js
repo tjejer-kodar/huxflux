@@ -49,6 +49,11 @@ document
     appendBalls(huxflux());
   });
 
+// Added for sorted balls
+document.querySelector("#order-button").addEventListener("click", function () {
+  appendBalls(huxflux().sort((a, b) => a - b));
+});
+
 //Just for style
 document.querySelectorAll("button").forEach((btn) =>
   btn.addEventListener("mousedown", function (e) {
