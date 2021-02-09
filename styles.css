@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bigelow+Rules&display=swap");
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background: linear-gradient(to right, rgb(46, 107, 46), rgb(205, 228, 214));
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.title-row {
+  font-family: "Bigelow Rules";
+  font-size: 200%;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.ball {
+  display: inline-block;
+  width: 39px;
+  height: 39px;
+  line-height: 39px;
+  font-size: 24px;
+  color: #2f6e3f;
+  background-color: white;
+  text-align: center;
+  border: 1px solid white;
+  padding: 3px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container {
+  height: 100vh;
+}
+
+.wrapper {
+  width: 450px;
+}
+
+.ball-row {
+  overflow: hidden;
+  padding: 8px;
+  min-height: 57px;
+  border: 2px solid white;
+  margin-bottom: 12px;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.flex-center.ball-row {
+  justify-content: space-between;
+}
+
+.error-span {
+  color: #8c0900;
+}
+
+#huxflux-button {
+  margin-right: 10px;
+}
+
+#order-button {
+  margin-right: 10px;
+}
+
+button {
+  padding: 12px;
+  border: 2px solid white;
+  border-radius: 12px;
+  color: white;
+  font-size: 15px;
+  background-color: transparent;
+  min-width: 140px;
+  user-select: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+button:active,
+button:hover {
+  background-color: #2f6e3f;
+}
+
+/* Utility */
+.flex-row {
+  flex-basis: 100%;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

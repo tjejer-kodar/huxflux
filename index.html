@@ -11,7 +11,7 @@
 <body>
     <div class="container flex-center">
         <div class="wrapper">
-            <div class="title-row flex-center"><h1>Övning: 
+            <div class="title-row flex-center"><h1>
                 <span class="huxflux">H</span>
                 <span class="huxflux">U</span>
                 <span class="huxflux">X</span>
@@ -23,19 +23,24 @@
             </div>
             <div class="ball-row flex-row flex-center"></div>
             <div class="huxflux-row flex-row flex-center">
-                <button id="huxflux-button">Huxflux</button>
-                <button id="test-button">Testa din Huxflux</button>
+                <button id="huxflux-button">Prova funktionen</button>
+                <button id="order-button">Prova sortering</button>
+                <button id="test-button">Kör tester</button>
             </div>
+
             <div class="flex-row flex-center">
                 <h2 id="success" style="display: none;">Din huxflux fungerar enligt samtliga tester, snyggt!</h1>
                 <h2 id="fail" style="display: none;">Hoppsan, något blev fel:</h2>
                 <ul id="fail-ul" style="display: none;">
                 </ul>
             </div>
-        </div
+        </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script type="module" src="javascripts/ball-creator.js"></script>
-    <script type="module" src="test/test.js"></script>
+    <script type="module" src="javascripts/test.js"></script>
+    <script type="huxflux.js"></script>
+    
 </body>
 
 </html>
